@@ -17,12 +17,21 @@ from django.contrib import admin
 from django.urls import path
 from .views import getpaper,getcourses
 
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 admin.site.site_header = "IOE PULCHOWK QuestionBank Administration"
 admin.site.site_title = "IOE PULCHOWK QuestionBank"
 admin.site.index_title = "IOE PULCHOWK QuestionBank Administration Panel"
+
+# ... the rest of your URLconf goes here ...
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('getpapers',getpaper),
     path('getcourses',getcourses)
 ]
+
+urlpatterns += staticfiles_urlpatterns()
+
+
+
+
