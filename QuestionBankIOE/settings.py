@@ -132,6 +132,8 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
 
+STATIC_ROOT = (BASE_DIR,'staticfiles')
+
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8080"
 ]
