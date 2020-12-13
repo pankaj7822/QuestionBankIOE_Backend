@@ -137,4 +137,3 @@ STATIC_ROOT = (BASE_DIR,'staticfiles')
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8080"
 ]
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
